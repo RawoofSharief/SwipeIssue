@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwipeIssue.MainPage"
+             x:Name="PopupRef">
+
+    <Grid x:Name="SwipeViewGrid" 
+              RowDefinitions="*">
+        <CollectionView x:Name="collectionView"
+            HorizontalOptions="FillAndExpand"
+            SelectionMode="None"
+            ItemSizingStrategy="MeasureAllItems"
+            VerticalScrollBarVisibility="Never">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                        <SwipeView Threshold="0" IsClippedToBounds="True">
+                        <SwipeView.RightItems>
+                            <SwipeItems SwipeBehaviorOnInvoked="Close" >
+                                <SwipeItemView >
+                                    <Frame Margin="10,20,25,20" WidthRequest="80"
+                                            Padding="8"
+                                            HasShadow="False"
+                                            BackgroundColor="Red"
+                                            CornerRadius="7"
+                                            IsClippedToBounds="True">
+                                        <Label Text="Delete" Margin="0" Padding="0"
+                                                TextColor="Black"
+                                                TextTransform="Uppercase"
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="Center" HorizontalTextAlignment="Center"
+                                                LineBreakMode="WordWrap"
+                                                FontSize="12"/>
+                                    </Frame>
+                                </SwipeItemView>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Grid Padding="10">
+                            <Frame BackgroundColor="Transparent" Margin="10"
+                                HasShadow="False"
+                                Padding="10"
+                                BorderColor="Grey"
+                                CornerRadius="7"
+                                IsClippedToBounds="True">
+                                <Grid ColumnDefinitions="Auto,*"
+                                    ColumnSpacing="10">
+
+                                    <Frame Grid.Column="0"
+                                        HasShadow="False"
+                                        CornerRadius="5"
+                                        IsClippedToBounds="True"
+                                        Padding="0"
+                                        Margin="0">
+                                        <Image Source="dotnet_bot.png"
+                                            HeightRequest="55" WidthRequest="54"
+                                            Aspect="Fill"
+                                            VerticalOptions="Center"
+                                            BackgroundColor="Transparent">
+                                        </Image>
+                                    </Frame>
+                                    <Grid Grid.Column="1">
+                                        <Editor 
+                                            BackgroundColor="Transparent"
+                                            MinimumHeightRequest="50" MaximumHeightRequest="50"
+                                            Placeholder="Enter Text Here"
+                                            />
+                                    <!--<Label Text="test"/>-->
+                                    </Grid>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
+
+

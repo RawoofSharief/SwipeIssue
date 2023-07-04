@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{FA755C34-D54F-427B-80F0-64DE20F109CB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SwipeIssue/MainPage.xaml">
+    <Files>
+      <File FileName="SwipeIssue/MainPage.xaml.cs" Line="25" Column="23" />
+      <File FileName="SwipeIssue/MainPage.xaml" Line="7" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SwipeIssue" expanded="True">
+            <Node name="SwipeIssue" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="net7.0-android" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3F8BF19D-9C45-480B-A84B-703215FB9AA7" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SwipeIssue PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3F8BF19D-9C45-480B-A84B-703215FB9AA7" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
